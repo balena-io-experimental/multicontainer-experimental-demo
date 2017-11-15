@@ -1,0 +1,12 @@
+version: '2'
+services:
+  main:
+    build: ./main
+    ports:
+      - 80
+    depends_on:
+      - foo
+  foo:
+    build: ./foo
+    ports:
+      - 8081
