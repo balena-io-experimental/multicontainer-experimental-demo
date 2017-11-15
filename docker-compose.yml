@@ -3,10 +3,10 @@ services:
   main:
     build: ./main
     ports:
-      - 80
-    depends_on:
-      - foo
-  foo:
-    build: ./foo
-    ports:
-      - 8081
+      - "80:80"
+#    depends_on:
+#      - foo
+#  foo:
+#    build: ./foo
+#    ports:
+#      - "8081:8081"

@@ -8,4 +8,5 @@ RUN JOBS=MAX npm install --production --unsafe-perm && npm cache clean && rm -rf
 
 COPY . ./
 
-CMD npm start
+ENTRYPOINT []
+CMD node index.js
